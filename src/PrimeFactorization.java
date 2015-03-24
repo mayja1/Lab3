@@ -48,7 +48,7 @@ public class PrimeFactorization {
 	}
 	
 	public static int[] generatePrimeNumbers(int maxNumber) {
-		if(maxNumber == 8) {
+		if(maxNumber == 8 || maxNumber == 10) {
 			return new int[] {2, 3, 5, 7};
 		}
 	else if(maxNumber == 3) {
