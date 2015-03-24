@@ -46,4 +46,8 @@ public class PrimeFactorization {
 			return factors;
 		}*/
 	}
+	
+	public static int[] generatePrimeNumbers(int maxNumber) {
+		return new int[] {};
+	}
 }
