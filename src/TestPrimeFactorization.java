@@ -51,4 +51,14 @@ public class TestPrimeFactorization {
 		assertEquals(3, primeFactors[0]);
 		assertEquals(3, primeFactors[1]);
 	}
+	
+	 @Test
+		public void testPrimeFactorizationOf325115() {
+			int[] primeFactors = PrimeFactorization.generatePrimeFactors(325115);
+			assertEquals(4, primeFactors.length);
+			assertEquals(5, primeFactors[0]);
+			assertEquals(7, primeFactors[1]);
+			assertEquals(7, primeFactors[2]);
+			assertEquals(1327, primeFactors[3]);
+		}
 }
