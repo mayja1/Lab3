@@ -11,13 +11,20 @@ public class TestPrimeFactorization {
 	@Test
 	public void testPrimeFactorizationOf1() {
 		int[] primeFactors = PrimeFactorization.generatePrimeFactors(1);
-		assertEquals(primeFactors.length, 0);
+		assertEquals(0, primeFactors.length);
 	}
 	
 	@Test
 	public void testPrimeFactorizationOf2() {
 		int[] primeFactors = PrimeFactorization.generatePrimeFactors(2);
-		assertEquals(primeFactors.length, 1);
-		assertEquals(primeFactors[0], 2);
+		assertEquals(1, primeFactors.length);
+		assertEquals(2, primeFactors[0]);
+	}
+	
+	@Test
+	public void testPrimeFactorizationOf3() {
+		int[] primeFactors = PrimeFactorization.generatePrimeFactors(3);
+		assertEquals(1, primeFactors.length);
+		assertEquals(3, primeFactors[0]);
 	}
 }
