@@ -34,13 +34,36 @@ public class PrimeFactorization {
 	}
 
 	public static int[] generatePrimeNumbers(int maxNumber) {
-		if (maxNumber == 13) {
+		ArrayList<Integer> primes = new ArrayList<>();
+		if(maxNumber <= 2) {
+			return new int[] {};
+		} else {
+			primes.add(2);
+		}
+		for(int i = 3; i < maxNumber; i++) {
+			boolean isPrime = true;
+			for(Integer num: primes) {
+				if(i % num ==0) {
+					isPrime = false;
+					break;
+				}
+			}
+			if(isPrime) {
+				primes.add(i);
+			}
+		}
+		int[] primesArray = new int[primes.size()];
+		for(int i = 0; i < primes.size(); i++) {
+			primesArray[i] = primes.get(i);
+		}
+		return primesArray;
+		/*if (maxNumber == 13) {
 			return new int[] { 2, 3, 5, 7, 11 };
 		} else if (maxNumber == 8 || maxNumber == 10) {
 			return new int[] { 2, 3, 5, 7 };
 		} else if (maxNumber == 3) {
 			return new int[] { 2 };
 		}
-		return new int[] {};
+		return new int[] {};*/
 	}
 }
