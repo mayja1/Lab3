@@ -10,14 +10,14 @@ public class TestPrimeFactorization {
 	
 	@Test
 	public void testPrimeFactorizationOf1() {
-		List<Integer> primeFactors = PrimeFactorization.generatePrimeFactors(1);
-		assertEquals(primeFactors.size(), 0);
+		int[] primeFactors = PrimeFactorization.generatePrimeFactors(1);
+		assertEquals(primeFactors.length, 0);
 	}
 	
 	@Test
 	public void testPrimeFactorizationOf2() {
-		List<Integer> primeFactors = PrimeFactorization.generatePrimeFactors(1);
-		assertEquals(primeFactors.size(), 1);
-		assertEquals(primeFactors.get(0).intValue(), 2);
+		int[] primeFactors = PrimeFactorization.generatePrimeFactors(1);
+		assertEquals(primeFactors.length, 1);
+		assertEquals(primeFactors[0], 2);
 	}
 }
