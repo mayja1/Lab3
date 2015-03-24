@@ -19,7 +19,7 @@ public class TestGeneratingPrimeNumbers {
 	   // Every time runner triggers, it will pass the arguments
 	   // from parameters we defined in primeNumbers() method
 	   public TestGeneratingPrimeNumbers(Integer inputNumber, 
-	      List expectedResult) {
+	      List<Integer> expectedResult) {
 	      this.inputNumber = inputNumber;
 	      this.expectedResult = new int[expectedResult.size()];
 	      for(int i = 0; i < expectedResult.size(); i++) {
@@ -30,7 +30,7 @@ public class TestGeneratingPrimeNumbers {
 	   @Parameterized.Parameters
 	   public static Collection primeNumbers() {
 	      return Arrays.asList(new Object[][] {
-	         { 1, Arrays.asList(new int[] {})},
+	         { 1, Arrays.asList()},
 	      });
 	   }
 
@@ -39,6 +39,7 @@ public class TestGeneratingPrimeNumbers {
 	   public void testPrimeNumberChecker() {
 	      System.out.println("Parameterized Number is : " + inputNumber);
 	      int[] actual =  PrimeFactorization.generatePrimeNumbers(inputNumber);
+	      assertEquals(expectedResult.length, actual.length);
 	      for(int i = 0; i < expectedResult.length; i++) {
 	      assertEquals(expectedResult[i], actual[i]);
 	      }
