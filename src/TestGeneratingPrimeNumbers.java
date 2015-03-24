@@ -35,6 +35,7 @@ public class TestGeneratingPrimeNumbers {
 	         {8, Arrays.asList(2, 3, 5, 7)},
 	         {10, Arrays.asList(2, 3, 5, 7)},
 	         {13, Arrays.asList(2, 3, 5, 7, 11)},
+	         {30, Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29)}
 	      });
 	   }
 
