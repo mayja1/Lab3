@@ -32,7 +32,8 @@ public class TestGeneratingPrimeNumbers {
 	      return Arrays.asList(new Object[][] {
 	         {1, Arrays.asList()},
 	         {3, Arrays.asList(2)},
-	         {8, Arrays.asList(2, 3, 5, 7)}
+	         {8, Arrays.asList(2, 3, 5, 7)},
+	         {10, Arrays.asList(2, 3, 5, 7)},
 	      });
 	   }
 
