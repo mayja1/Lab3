@@ -30,7 +30,8 @@ public class TestGeneratingPrimeNumbers {
 	   @Parameterized.Parameters
 	   public static Collection primeNumbers() {
 	      return Arrays.asList(new Object[][] {
-	         { 1, Arrays.asList()},
+	         {1, Arrays.asList()},
+	         {3, Arrays.asList(2)}
 	      });
 	   }
 
