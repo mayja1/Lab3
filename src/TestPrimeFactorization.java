@@ -43,4 +43,12 @@ public class TestPrimeFactorization {
 		assertEquals(2, primeFactors[0]);
 		assertEquals(3, primeFactors[1]);
 	}
+	
+	@Test
+	public void testPrimeFactorizationOf9() {
+		int[] primeFactors = PrimeFactorization.generatePrimeFactors(9);
+		assertEquals(2, primeFactors.length);
+		assertEquals(3, primeFactors[0]);
+		assertEquals(3, primeFactors[1]);
+	}
 }
