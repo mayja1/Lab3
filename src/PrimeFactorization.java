@@ -16,8 +16,13 @@ public class PrimeFactorization {
 			return factors;
 		} else {
 			int[] factors = new int[2];
+			if(num == 4) {
 			factors[0] = 2;
 			factors[1] = 2;
+			} else {
+				factors[0] = 2;
+				factors[1] = 3;
+			}
 			return factors;
 		}
 	}
