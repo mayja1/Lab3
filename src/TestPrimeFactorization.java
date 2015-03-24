@@ -38,7 +38,7 @@ public class TestPrimeFactorization {
 	
 	@Test
 	public void testPrimeFactorizationOf6() {
-		int[] primeFactors = PrimeFactorization.generatePrimeFactors(4);
+		int[] primeFactors = PrimeFactorization.generatePrimeFactors(6);
 		assertEquals(2, primeFactors.length);
 		assertEquals(2, primeFactors[0]);
 		assertEquals(3, primeFactors[1]);
